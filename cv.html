@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV-Wulan Sari</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #eef2ff;
+        color: #040405;
+        padding: 30px 15px;
+        line-height: 1.6;
+      }
+
+      .cv-container {
+        max-width: 950px;
+        margin: auto;
+        background: #d7bfdc;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 10px;
+      }
+
+      /* BAGIAN HEADER */
+      .header {
+        background: #86679e;
+        color: white;
+        padding: 35px;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+
+      .foto {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        border: 4px solid white;
+        object-fit: cover;
+        background: #ddd;
+      }
+
+      .header h1 {
+        font-size: 30px;
+        margin-bottom: 5px;
+      }
+
+      .header p {
+        color: #e0e7ff;
+      }
+
+      .kontak {
+        margin-top: 12px;
+        font-size: 14px;
+      }
+
+      /* ISI CV */
+      .content {
+        padding: 30px;
+      }
+
+      .section {
+        margin-bottom: 28px;
+      }
+
+      .section h2 {
+        color: #7852a9;
+        font-size: 19px;
+        border-left: 5px solid #818cf8;
+        padding-left: 12px;
+        margin-bottom: 14px;
+      }
+
+      .section p {
+        margin-bottom: 8px;
+      }
+
+      /* TABEL */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #311432;
+        vertical-align: top;
+      }
+
+      th {
+        background: #7852a9;
+        color: #d7bfdc;
+      }
+
+      tr:nth-child(even) {
+        background: #f5f6ff;
+      }
+
+      /* KEAHLIAN */
+      .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .skill {
+        background: #e0e7ff;
+        color: #311432;
+        padding: 8px 14px;
+        border-radius: 20px;
+        font-size: 14px;
+      }
+
+      .footer {
+        background: #f5f6ff;
+        text-align: center;
+        padding: 18px;
+        color: #64748b;
+        font-size: 13px;
+      }
+
+      /* RESPONSIVE UNTUK HP */
+      @media (max-width: 600px) {
+        body {
+          padding: 10px;
+        }
+
+        .header {
+          flex-direction: column;
+          text-align: center;
+          padding: 25px 15px;
+        }
+
+        .header h1 {
+          font-size: 24px;
+        }
+
+        .content {
+          padding: 18px;
+        }
+
+        table {
+          font-size: 12px;
+        }
+
+        th,
+        td {
+          padding: 8px;
+          overflow-wrap: anywhere;
+        }
+      }
+
+      /* 8. Responsive: ponsel */
+      @media (max-width: 480px) {
+        .summary {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="cv-container">
+      <!-- HEADER / IDENTITAS -->
+      <header class="header">
+        <!-- Ganti foto.jpg dengan nama file fotomu -->
+        <img src="myfoto.jpeg" alt="Foto profil" class="foto" />
+
+        <div>
+          <h1>Wulan Sari Tukan</h1>
+          <p>Teknik Informatika</p>
+
+          <div class="kontak">
+            <p>📍 Jakarta, Indonesia</p>
+            <p>✉️ wulansrtkn@gmail.com</p>
+            <p>📱 081344607952</p>
+            <p>🌐 github.com/wulansar02307</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="content">
+        <!-- PROFIL -->
+        <section class="section">
+          <h2>Profil Singkat</h2>
+          <p>
+            Saya merupakan seorang mahasisiwa S1 Teknik Informatika saya
+            memiliki semangat yang tinggi, disiplin dan tanggung jawab. saya
+            senang mempelajari hal-hal baru dan mampu bekerja sama yang baik
+            dalam tim, serta mampu berkontribusi positif demi memajukan
+            teknologi di lingkungan sekitar.
+          </p>
+        </section>
+
+        <!-- BIODATA -->
+        <section class="section">
+          <h2>Data Pribadi</h2>
+
+          <table>
+            <tr>
+              <th>Informasi</th>
+              <th>Keterangan</th>
+            </tr>
+            <tr>
+              <td>Nama Lengkap</td>
+              <td>Wulan Sari Tukan</td>
+            </tr>
+            <tr>
+              <td>Tempat,Tanggal Lahir</td>
+              <td>Sekat, 02 maret 2007</td>
+            </tr>
+            <tr>
+              <td>Jenis Kelamin</td>
+              <td>Perempuan</td>
+            </tr>
+            <tr>
+              <td>Alamat</td>
+              <td>Jakarta Timur</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>wulansrtkn@email.com</td>
+            </tr>
+            <tr>
+              <td>Telepon</td>
+              <td>081344607952</td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- PENDIDIKAN -->
+        <section class="section">
+          <h2>Riwayat Pendidikan</h2>
+
+          <table>
+            <tr>
+              <th>Tahun</th>
+              <th>Sekolah</th>
+              <th>Jurusan</th>
+            </tr>
+            <tr>
+              <td>2013 - 2019</td>
+              <td>SD Al-Hilal 2 Namlea</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>2019 - 2022</td>
+              <td>SMP Negeri 9 Buru</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>2022 - 2025</td>
+              <td>SMA Negeri 1 Buru</td>
+              <td>IPA</td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- PENGALAMAN -->
+        <section class="section">
+          <h2>Pengalaman Organisasi</h2>
+
+          <table>
+            <tr>
+              <th>Periode</th>
+              <th>Posisi</th>
+              <th>Deskripsi</th>
+            </tr>
+            <tr>
+              <td>2023 - 20224</td>
+              <td>Anggota Tim</td>
+              <td>Anggota Tim Gudep Madan Cemara sangga Pencoba</td>
+            </tr>
+            <tr>
+              <td>2020-2021</td>
+              <td>Anggota Tim</td>
+              <td>Anggota Osis Devisi External</td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- Minat dan Hobi-->
+        <section class="section">
+          <h2>Minat dan Hobi</h2>
+
+          <div class="skill-list">
+            <span class="skill">Masak dan Nonton</span>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Terima kasih telah membaca CV saya.</p>
+        <p>© 2026 - Wulan Sari</p>
+      </footer>
+    </div>
+  </body>
+</html>
